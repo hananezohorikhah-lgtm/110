@@ -1,0 +1,24 @@
+۱۰_ تابع فاکتوریال ( )fact را با یک حلقه for پیاده سازی کنید (مثال ٩-٤ را ببینید).
+مشخص کنید که چه مقداری از موجب میشود که (fact(n سرریز شود.
+
+پاسخ:
+#include <iostream>
+using namespace std;
+
+long fact(int n)
+{
+    long f = 1;
+
+    for (int i = 1; i <= n; i++)
+        f *= i;
+
+    return f;
+}
+
+int main()
+{
+    for (int n = 1; n <= 25; n++)
+        cout << n << "! = " << fact(n) << endl;
+
+    return 0;
+}
